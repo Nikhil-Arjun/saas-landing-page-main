@@ -83,6 +83,78 @@ img {
   width: 70%;
   margin-bottom: 20px;
 }
+
+/* Video Section */
+
+.video {
+  padding: 10px 0 40px;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-preview {
+  margin-bottom: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonials .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.testimonials .testimonials-heading {
+  width: 700px;
+  margin-bottom: 40px;
+}
+
+/* Pricing */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.pricing .pricing-card-subheading {
+  margin-bottom: 30px;
+}
+
+.pricing .pricing-card-price {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solod #ccc;
+}
+
+.pricing ul {
+  margin: 30px 0;
+}
+
+.pricing ul li {
+  margin-bottom: 20px;
+}
+
+.pricing ul li i {
+  margin-right: 10px;
+}
+
+.pricing .pricing-footer {
+  margin-bottom: 20px;
+}
+
 /* Utility Classes */
 .container {
   max-width: 1100px;
@@ -96,6 +168,14 @@ img {
   padding: 0 15px;
 }
 
+/* Card */
+.card {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -107,6 +187,7 @@ img {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  text-align: center;
   transition: 0.5s;
 }
 
@@ -172,4 +253,25 @@ For extra styling to page or when adding dark mode on the page.
 
 .text-center {
   text-align: center;
+}
+
+/* Background */
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.bg-dark {
+  background: #000;
+  color: #fff;
+}
+
+.bg-black {
+  background: #000;
+  color: #fff;
 }
