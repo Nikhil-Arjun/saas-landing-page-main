@@ -5,7 +5,7 @@
 }
 :root {
   --primary-color: #4891ff;
-  --light-color: #b5b5bd;
+  --light-color: #c1c1d2;
   --dark-color: #111;
 }
 body {
@@ -62,6 +62,27 @@ img {
 .navbar ul li:last-child a {
   margin-left: 10px;
 }
+
+/* Hero Section */
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero .container {
+  background: url("../images/hero-bg.png") no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+}
+
+.hero .hero-content {
+  width: 70%;
+}
+
+.hero .hero-text {
+  width: 70%;
+  margin-bottom: 20px;
+}
 /* Utility Classes */
 .container {
   max-width: 1100px;
@@ -80,6 +101,7 @@ img {
   display: inline-block;
   padding: 13px 20px;
   color: #333;
+  background: var(--light-color);
   font-weight: 600;
   text-decoration: none;
   border: none;
@@ -90,11 +112,11 @@ img {
 
 .btn:hover {
   opacity: 0.8;
-  background: var(--light-color);
 }
 /* 
 
 For extra styling to page or when adding dark mode on the page.
+*/
 
 .btn-primary {
   background: var(--primary-color);
@@ -104,9 +126,50 @@ For extra styling to page or when adding dark mode on the page.
 .btn-dark {
   background: var(--dark-color);
   color: #fff;
-} */
+}
 
 .btn-block {
   display: block;
   width: 100%;
+}
+
+/* Test Classes */
+
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
 }
